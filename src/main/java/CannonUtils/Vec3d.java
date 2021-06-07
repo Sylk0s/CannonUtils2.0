@@ -29,6 +29,10 @@ public final class Vec3d {
         return this.z;
     }
 
+    public String toString() {
+        return "(" + this.x + ", " + this.y + ", " + this.z + ")";
+    }
+
     // Addition, Subtraction, Multiplication
     public Vec3d add(Vec3d vec) {
         return this.add(vec.x, vec.y, vec.z);
