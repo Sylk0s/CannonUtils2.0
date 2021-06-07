@@ -1,3 +1,8 @@
+package Explosion;
+
+import CannonUtils.Vec3d;
+import CannonUtils.MathHelper;
+
 public final class Explosion {
     public Vec3d pos;
     public float power;

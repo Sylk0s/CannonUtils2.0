@@ -1,3 +1,8 @@
+package Vector3f;
+
+import CannonUtils.MathHelper;
+
+// Not sure if this ever gets used
 public final class Vector3f {
     private float x;
     private float y;

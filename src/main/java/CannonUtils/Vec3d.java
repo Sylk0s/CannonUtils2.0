@@ -1,3 +1,7 @@
+package Vec3d;
+
+import CannonUtils.MathHelper;
+
 public final class Vec3d {
     public final double x;
     public final double y;
