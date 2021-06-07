@@ -1,4 +1,4 @@
-package MathHelper;
+package CannonUtils;
 
 // Mojank's strange math class, important because they do a bunch of casting that produces float errors
 public final class MathHelper {

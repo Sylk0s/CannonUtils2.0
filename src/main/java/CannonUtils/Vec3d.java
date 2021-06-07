@@ -1,6 +1,4 @@
-package Vec3d;
-
-import CannonUtils.MathHelper;
+package CannonUtils;
 
 public final class Vec3d {
     public final double x;

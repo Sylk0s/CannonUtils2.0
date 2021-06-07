@@ -1,7 +1,4 @@
-package Explosion;
-
-import CannonUtils.Vec3d;
-import CannonUtils.MathHelper;
+package CannonUtils;
 
 public final class Explosion {
     public Vec3d pos;
@@ -22,7 +19,7 @@ public final class Explosion {
         float range = this.power * 2.0F;
         // Distance from explosion to entity feet
         double distanceNormalized = (double)(MathHelper.sqrt(pos.squaredDistanceTo(this.pos)) / range);
-        if (y <= 1.0D) {
+        if (distanceNormalized <= 1.0D) {
             // Get the direction
             double dx = pos.x - this.pos.x;
             // There is an exception for tnt entities, the direction of velocity is explosion to feet instead of explosion to eyes (for some reason lol)
@@ -39,5 +36,6 @@ public final class Explosion {
                 return new Vec3d(dx * velocityMag, dy * velocityMag, dz * velocityMag);
             }
         }
+        return new Vec3d(0, 0, 0);
     }
 }

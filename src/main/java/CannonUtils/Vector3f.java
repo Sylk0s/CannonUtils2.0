@@ -1,6 +1,4 @@
-package Vector3f;
-
-import CannonUtils.MathHelper;
+package CannonUtils;
 
 // Not sure if this ever gets used
 public final class Vector3f {
