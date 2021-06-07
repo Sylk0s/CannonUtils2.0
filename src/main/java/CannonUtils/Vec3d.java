@@ -14,6 +14,19 @@ public final class Vec3d {
         this((double)vec.getX(), (double)vec.getY(), (double)vec.getZ());
     }
 
+    // Get
+    public final double getX() {
+        return this.x;
+    }
+  
+    public final double getY() {
+        return this.y;
+    }
+  
+    public final double getZ() {
+        return this.z;
+    }
+
     // Addition, Subtraction, Multiplication
 
     public Vec3d add(Vec3d vec) {

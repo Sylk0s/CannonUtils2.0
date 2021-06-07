@@ -3,6 +3,7 @@ public final class Vector3f {
     private float y;
     private float z;
 
+    // Constructors
     public Vector3f(float x, float y, float z) {
         this.x = x;
         this.y = y;
@@ -11,5 +12,18 @@ public final class Vector3f {
 
     public Vector3f(Vec3d other) {
         this((float)other.x, (float)other.y, (float)other.z);
+    }
+
+    // Get
+    public float getX() {
+        return this.x;
+    }
+  
+    public float getY() {
+        return this.y;
+    }
+  
+    public float getZ() {
+        return this.z;
     }
 }
