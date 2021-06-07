@@ -26,9 +26,9 @@ public final class Explosion {
             double dmag = (double) MathHelper.sqrt(dx * dx + dy * dy + dz * dz);
             if (dmag != 0.0D) {
                 // Normalize direction vector
-                dx /= ac;
-                dy /= ac;
-                dz /= ac;
+                dx /= dmag;
+                dy /= dmag;
+                dz /= dmag;
                 // Velocity magnitude is (1 - distance/2power) * exposure
                 double velocityMag = (1.0D - distanceNormalized) * (double) exposure;
                 return new Vec3d(dx * velocityMag, dy * velocityMag, dz * velocityMag);
