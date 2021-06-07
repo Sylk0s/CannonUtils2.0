@@ -5,12 +5,12 @@ public final class Explosion {
     public float power;
 
     // Constructors
-    public Explosion(Vec3d pos, int power) {
+    public Explosion(Vec3d pos, float power) {
         this.pos = pos;
         this.power = power;
     }
 
-    public Explosion(double x, double y, double z, int power) {
+    public Explosion(double x, double y, double z, float power) {
         this.pos = new Vec3d(x, y, z);
         this.power = power;
     }
